@@ -1,0 +1,138 @@
+:root{
+    --text-color: #263343;
+    --background-color: #f0f4f5;
+    --accent-color: lightpink;
+    --font-size: 25px;
+}
+
+body{
+    margin: 0;
+    font-family: 'Nunito';
+    font-weight: 250;
+}
+
+a{
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+h1{
+    font-weight: 1000;
+}
+
+h2{
+    font-weight: 250;
+}
+
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #263343;
+    padding: 1px 12px;
+8
+}
+
+.navbar_name{
+    font-size: var(--font-size);
+    padding-left: 35px;
+    color: var(--text-color);
+}
+
+.navbar_menu{
+    display: flex;
+    margin-left: auto;
+    list-style: none;
+    padding-left: 0;
+}
+
+.navbar_menu li{
+    padding: 8px 30px;
+    font-size: var(--font-size);
+}
+
+.navbar_menu li:hover{
+    background-color: var(--accent-color);
+    border-radius: 4px;
+}
+
+.navbar_icons{
+    list-style: none;
+    display: flex;
+    padding-left: 0;
+}
+
+.navbar_icons li{
+    padding: 8px 17px; 
+    font-size: var(--font-size);
+}
+
+.navbar_toggleBtn{
+    display: none;
+    position: absolute;
+    right: 32px;
+    font-size: var(--font-size);
+}
+
+.self_intro{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    padding: 8px 20px;
+}
+
+.self_intro li{
+    padding-right: 50px;
+}
+
+.container{
+    padding-top: 100px;
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+@media screen and (max-width: 1000px){
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 8px 24px;
+    }
+
+    .navbar_name {
+        width: 100%;
+        padding-left: 0;
+        text-align: center;
+        align-items: center;
+    }
+
+    .navbar_menu{
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .navbar_menu li{
+        width: 100%;
+        text-align: center;
+    }
+
+    .navbar_icons {
+        display: none;
+        justify-content: center;
+        width: 100%;
+    }
+
+    .navbar_toggleBtn{
+        display: block;
+    }
+
+    .navbar_menu.active,
+    .navbar_icons.active {
+        display: flex;
+    }
+
+    .self_intro{
+        flex-direction: column;
+    }
+}
