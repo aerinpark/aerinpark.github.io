@@ -41,7 +41,6 @@ h2{
     /* font-size: var(--font-size); */
     font-size: 30px;
     padding-left: 35px;
-    font-family: 'Input Mono';
     color: var(--text-color);
     /* font-weight: 500; */
 }
@@ -50,7 +49,6 @@ h2{
     display: flex;
     margin-left: auto;
     list-style: none;
-    font-family: 'Input Mono';
     padding-left: 0;
 }
 
