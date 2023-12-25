@@ -11,6 +11,11 @@ body{
     font-weight: 250;
 }
 
+img {
+    width: auto;
+    height: 400px;
+}
+
 a{
     text-decoration: none;
     color: var(--text-color);
@@ -30,19 +35,22 @@ h2{
     align-items: center;
     border-bottom: 1px solid #263343;
     padding: 1px 12px;
-8
 }
 
 .navbar_name{
-    font-size: var(--font-size);
+    /* font-size: var(--font-size); */
+    font-size: 30px;
     padding-left: 35px;
+    font-family: 'Input Mono';
     color: var(--text-color);
+    /* font-weight: 500; */
 }
 
 .navbar_menu{
     display: flex;
     margin-left: auto;
     list-style: none;
+    font-family: 'Input Mono';
     padding-left: 0;
 }
 
@@ -74,14 +82,14 @@ h2{
     font-size: var(--font-size);
 }
 
-.self_intro{
+.self_intro_academic, .self_intro_hobby{
     display: flex;
     justify-content: space-between;
     list-style: none;
     padding: 8px 20px;
 }
 
-.self_intro li{
+.self_intro_academic li{
     padding-right: 50px;
 }
 
@@ -132,7 +140,16 @@ h2{
         display: flex;
     }
 
-    .self_intro{
+    .self_intro_academic,
+    .self_intro_hobby {
+        display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .self_intro_academic img,
+    .self_intro_hobby img {
+        width: 100%; /* Adjust the width as needed */
     }
 }
