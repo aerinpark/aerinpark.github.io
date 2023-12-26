@@ -5,9 +5,14 @@
     --font-size: 25px;
 }
 
+@font-face {
+    font-family: 'MyMono';
+    src: url('fonts/InputMono-ExtraLight.ttf') format('truetype');
+}
+
 body{
     margin: 0;
-    font-family: 'Nunito';
+    font-family: 'Poppins';
     font-weight: 250;
 }
 
@@ -22,11 +27,13 @@ a{
 }
 
 h1{
-    font-weight: 1000;
+    font-family: 'Poppins';
 }
 
 h2{
-    font-weight: 250;
+    font-weight: 5;
+    font-family: 'Noto Sans';
+    font-size: 20px;;
 }
 
 .navbar{
@@ -38,19 +45,16 @@ h2{
 }
 
 .navbar_name{
-    /* font-size: var(--font-size); */
     font-size: 30px;
     padding-left: 35px;
-    font-family: 'Input Mono';
+    /* font-family: 'Montserrat'; */
     color: var(--text-color);
-    /* font-weight: 500; */
 }
 
 .navbar_menu{
     display: flex;
     margin-left: auto;
     list-style: none;
-    font-family: 'Input Mono';
     padding-left: 0;
 }
 
@@ -82,23 +86,40 @@ h2{
     font-size: var(--font-size);
 }
 
-.self_intro_academic, .self_intro_hobby{
+.container{
+    padding-top: 100px;
+    padding-left: 180px;
+    padding-right: 150px;
+}
+
+.container ul{
     display: flex;
     justify-content: space-between;
     list-style: none;
     padding: 8px 20px;
 }
 
-.self_intro_academic li{
+.container li{
     padding-right: 50px;
+    align-items: start;
 }
 
-.container{
-    padding-top: 100px;
-    padding-left: 150px;
-    padding-right: 150px;
+.img_grad{
+    width: auto;
+    height: 400px;
 }
 
+.img_lake{
+    width: 450px;
+    height: auto;
+}
+
+.img_osaka{
+    width: 450px;
+    height: auto;
+}
+
+/* Adding responsiveness to screen size */
 @media screen and (max-width: 1000px){
     .navbar {
         flex-direction: column;
@@ -140,12 +161,18 @@ h2{
         display: flex;
     }
 
-    .self_intro_academic,
-    .self_intro_hobby {
+    .container{
+        padding-top: 50px;
+        padding-left: 25px;
+        padding-right: 0px;
+    }
+
+    .container ul {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         align-items: center;
+        padding-right: 0px;
     }
 
     .self_intro_academic img,
