@@ -5,11 +5,6 @@
     --font-size: 25px;
 }
 
-@font-face {
-    font-family: 'MyMono';
-    src: url('fonts/InputMono-ExtraLight.ttf') format('truetype');
-}
-
 body{
     margin: 0;
     font-family: 'Poppins';
@@ -31,7 +26,7 @@ h1{
 }
 
 h2{
-    font-weight: 5;
+    font-weight:400;
     font-family: 'Noto Sans';
     font-size: 20px;;
 }
@@ -47,7 +42,6 @@ h2{
 .navbar_name{
     font-size: 30px;
     padding-left: 35px;
-    /* font-family: 'Montserrat'; */
     color: var(--text-color);
 }
 
