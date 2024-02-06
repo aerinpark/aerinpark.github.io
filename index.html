@@ -1,80 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv='cache-control' content='no-cache'> 
-    <meta http-equiv='expires' content='0'> 
-    <meta http-equiv='pragma' content='no-cache'>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap" rel="stylesheet">
-    <title>Aerin Park</title>
-    <script src="https://kit.fontawesome.com/81016c3269.js" crossorigin="anonymous"></script>
-    <script src="main.js" defer></script>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap" rel="stylesheet">
+        <title>Aerin Park</title>
+        <script src="https://kit.fontawesome.com/81016c3269.js" crossorigin="anonymous"></script>
+        <script src="js/main.js" defer></script>
+    </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar_logo">
-            <a class="">AERIN PARK</a>
+    <header>
+        <div class="nav_title">
+            <div class="nav_logo">AERIN PARK</div>
+            <div class="nav_toggle">
+                <a href="#">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
         </div>
-
-        <ul class="navbar_menu">
+        
+        <div class="nav_menu">
             <li><a href="#">HOME</a></li>
             <li><a href="projects.html">PROJECTS</a></li>
             <li><a href="skills.html">SKILLS</a></li>
-        </ul>
-
-        <ul class="navbar_icons">
+        </div>
+        <div class="nav_icons">
             <li><a href="https://github.com/aerinpark" title="github_aerinp" target="_blank"><i class="fa-brands fa-github"></i></a></li>
             <li><a href="https://www.linkedin.com/in/aerinpark/" title="linkedin_aerinp" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
             <li><a href="mailto:aerin.gy.park@gmail.com" title="aerin.gy.park@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
-        </ul>
-
-        <a href="#" class="navbar_toggleBtn">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-    </nav>
-    
-    <main class="title_page">
-        <div class="container">
-            <h1>
-                Hello, I'm Aerin.
-            </h1>
-            <ul class="self_intro">
-                <li> 
-                    <h2>
-                        I am a passionate learner and a dedicated individual with a diverse academic background. I graduated from Simon Fraser University in 2019 with a Bachelor of Science in Molecular Biology and Biochemistry (MBB) along with a Certificate in Genomics. <br><br>
-                        Faced with the challenges posed by the pandemic, I decided to delve into a new academic discipline to expand both my knowledge and perspective.  This has led me to my current journey of pursuing a second Bachelor's degree in Computer Science at SFU. 
-                    </h2>
-                </li>
-                <li>
-                    <img src="images/graduation.jpg" class="img_grad" alt="Graduation photo taken at SFU">
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <img src="images/Lafarge_lake.jpg" class="img_lake" alt="Photo taken at Lafarge Lake">
-                </li>
-                <li>
-                    <h2>
-                        Hobbies - outside school
-                    </h2>
-                </li>
-            </ul>
-            <ul>
-                <li>
-                    <h2>
-                        Check
-                    </h2>
-                </li>
-                <li>
-                    <img src="images/Osaka_universal.jpg" class="img_osaka" alt="Photo taken at the Sesame Street Garden">
-                </li>
-            </ul>
         </div>
-        
-    </main>
+    </header>
+    
+    <section class="">
+        <div class="about">
+            <h1>Hello, I'm Aerin.</h1>
+            <div class="self_intro_left">
+                <p>
+                    I am a passionate learner and a dedicated individual with a diverse academic background. I graduated from Simon Fraser University in 2019 with a Bachelor of Science in Molecular Biology and Biochemistry (MBB) along with a Certificate in Genomics. <br><br>
+                    Faced with the challenges posed by the pandemic, I decided to delve into a new academic discipline to expand both my knowledge and perspective.  This has led me to my current journey of pursuing a second Bachelor's degree in Computer Science at SFU. 
+                </p>
+                <img src="images/graduation.jpg" class="img_grad" alt="Graduation photo taken at SFU">
+            </div>
+            <div class="self_intro_right">
+                <img src="images/Lafarge_lake.jpg" class="img_lake" alt="Picture taken at Lafarge Lake wearing a black dress">
+                <h2>
+                    I am also a part-time barista at Starbucks. 
+                </h2>
+            </div>
+        </div>
+    </section>
 </body>
 </html>

@@ -3,39 +3,61 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans:wght@100;200;300;400;500;600;700;800;900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:wght@100&display=swap" rel="stylesheet">
     <title>Aerin Park</title>
     <script src="https://kit.fontawesome.com/81016c3269.js" crossorigin="anonymous"></script>
-    <script src="main.js" defer></script>
+    <script src="js/main.js" defer></script>
 </head>
 <body>
-    <nav class="navbar">
-        <div class="navbar_logo">
-            <a class="">AERIN PARK</a>
+    <header>
+        <div class="nav_title">
+            <div class="nav_logo">AERIN PARK</div>
+            <div class="nav_toggle">
+                <a href="#">
+                    <i class="fa-solid fa-bars"></i>
+                </a>
+            </div>
         </div>
-
-        <ul class="navbar_menu">
+        
+        <div class="nav_menu">
             <li><a href="index.html">HOME</a></li>
             <li><a href="#">PROJECTS</a></li>
             <li><a href="skills.html">SKILLS</a></li>
-        </ul>
-
-        <ul class="navbar_icons">
+        </div>
+        <div class="nav_icons">
             <li><a href="https://github.com/aerinpark" title="github_aerinp" target="_blank"><i class="fa-brands fa-github"></i></a></li>
             <li><a href="https://www.linkedin.com/in/aerinpark/" title="linkedin_aerinp" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
             <li><a href="mailto:aerin.gy.park@gmail.com" title="aerin.gy.park@gmail.com"><i class="fa-regular fa-envelope"></i></a></li>
-        </ul>
+        </div>
+    </header>
+    <section>
+        <div class="proj_intro">
+            <h1>Projects</h1>
+            <p>
+                <br>
+                The following is a comprehensive list of my academic and personal projects, showcasing the work I have completed and am currently engaging. 
+            </p>
+        </div>
+        <div class="project_list">
+            <div class="project">
+                <img src="images/testing.jpeg" alt="">
+                <div class="detail">
+                    <a href="#">More</a>
+                </div>
+            </div>
 
-        <a href="#" class="navbar_toggleBtn">
-            <i class="fa-solid fa-bars"></i>
-        </a>
-    </nav>
-    <main class="project_page">
-        <div class="container">
-            <ul class="skill_list">
+            <div class="project">
+                <img src="images/squid_game.jpg" alt="">
+                <div class="detail">
+                    <a href="#">More</a>
+                </div>
+            </div>
+        </div>
+
+            <!-- <ul class="skill_list">
                 <li>
                     <h1>
                         MicroPedia
@@ -54,8 +76,7 @@
                 <li>
                 </li>
             </ul>
-            <hr>
-        </div>
-    </main>
+            <hr> -->
+    </section>
 </body>
 </html>
