@@ -196,6 +196,43 @@ section {
     padding: 5px 15px;
 }
 
+.project_dialog {
+    width: 70%;
+    height: 70%;
+    top: 15%;
+    left: 15%;
+    padding: 50px;
+}
+
+.project_dialog::backdrop {
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent black backdrop */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+
+.project_dialog .dialog_title {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.project_dialog .dialog_title .dialog_button {
+    background: none;
+    border: black;
+    padding: 10px;
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+.project_dialog p {
+    margin-top: 20px;
+}
+
 @media screen and (max-width: 1200px) {
     section {
         height: 100%;
@@ -291,11 +328,19 @@ section {
     }
 
     h1 {
-        font-size: 25px;
+        font-size: 1.9rem;
     }
 
     .self_intro_left {
         margin: 30px 0;
+    }
+
+    .project_dialog {
+        padding: 30px;
+    }
+
+    .project_dialog p {
+        font-size: 1.1rem;
     }
 
 }

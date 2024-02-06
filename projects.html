@@ -45,7 +45,7 @@
             <div class="project">
                 <img src="images/testing.jpeg" alt="">
                 <div class="detail">
-                    <a href="#">More</a>
+                    <a href="#" onclick="showDialog('microscope')">More</a>
                 </div>
             </div>
 
@@ -57,13 +57,24 @@
             </div>
         </div>
 
+        <dialog class="project_dialog" id="microscope">
+            <div class="dialog_title">
+                <h1>MicroPedia</h1>
+                <button class="dialog_button" onclick="closeDialog('microscope')"><i class="fa-solid fa-x"></i></button>   
+            </div>
+            <p>
+                MicroPedia is a m
+                obile Android application designed for microscope slide viewing. The app offers a range of features, including posting, viewing, and sharing slides, as well as engaging quizzes named 'Guesser' that are randomly generated. 
+            </p>
+        </dialog>
             <!-- <ul class="skill_list">
                 <li>
                     <h1>
                         MicroPedia
                     </h1>
                     <h2>
-                        MicroPedia is a mobile Android application designed for microscope slide viewing. The app offers a range of features, including posting, viewing, and sharing slides, as well as engaging quizzes named 'Guesser' that are randomly generated. 
+                        MicroPedia is a m
+                        obile Android application designed for microscope slide viewing. The app offers a range of features, including posting, viewing, and sharing slides, as well as engaging quizzes named 'Guesser' that are randomly generated. 
                     </h2>
                     <h2>
                         While these functionalities are currently available, our team is actively working on developing the annotation feature.  

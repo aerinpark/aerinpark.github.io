@@ -9,3 +9,18 @@ toggleBtn.addEventListener('click', () => {
     icons.classList.toggle('active');
     title.classList.toggle('active');
 });
+
+const showDialog = id => {
+    const dialog = document.getElementById(id);
+    
+    if (!dialog.showModal) {
+        dialogPolyfill.registerDialog(dialog);
+    }
+    
+    dialog.showModal();
+}
+
+const closeDialog = id => {
+    const dialog = document.getElementById(id);
+    dialog.close();
+}
