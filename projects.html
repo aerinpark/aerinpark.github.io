@@ -52,7 +52,7 @@
             <div class="project">
                 <img src="images/squid_game.jpg" alt="">
                 <div class="detail">
-                    <a href="#">More</a>
+                    <a href="#" onclick="showDialog('squid_game')">More</a>
                 </div>
             </div>
         </div>
@@ -63,31 +63,25 @@
                 <button class="dialog_button" onclick="closeDialog('microscope')"><i class="fa-solid fa-x"></i></button>   
             </div>
             <p>
-                MicroPedia is a m
-                obile Android application designed for microscope slide viewing. The app offers a range of features, including posting, viewing, and sharing slides, as well as engaging quizzes named 'Guesser' that are randomly generated. 
+                MicroPedia is a mobile Android application designed for microscope slide viewing. The app offers a range of features, including posting, viewing, and sharing slides, as well as engaging quizzes named 'Guesser' that are randomly generated.
+            </p>
+            <p>
+                While these functionalities are available, our team is currently working on developing the annotation feature.
+            </p>
+            <p>
+                For more information, please visit the project <a href="https://sites.google.com/view/cmpt362-cell-identifier-g24" target="_blank">website</a> or <a href="https://github.com/bperdija/Cell-Identifier" target="_blank">repository</a>.
             </p>
         </dialog>
-            <!-- <ul class="skill_list">
-                <li>
-                    <h1>
-                        MicroPedia
-                    </h1>
-                    <h2>
-                        MicroPedia is a m
-                        obile Android application designed for microscope slide viewing. The app offers a range of features, including posting, viewing, and sharing slides, as well as engaging quizzes named 'Guesser' that are randomly generated. 
-                    </h2>
-                    <h2>
-                        While these functionalities are currently available, our team is actively working on developing the annotation feature.  
-                    </h2>
-                    <h2>
-                        For more information, please visit the project <a href="https://sites.google.com/view/cmpt362-cell-identifier-g24" target="_blank">website</a> or <a href="https://github.com/bperdija/Cell-Identifier" target="_blank">repository</a>.
-                    </h2>
-                </li>
-                    <img src="images/testing.jpeg" class="img_micropedia" alt="the registration page of the application MicroPedia">
-                <li>
-                </li>
-            </ul>
-            <hr> -->
+
+        <dialog class="project_dialog" id="squid_game">
+            <div class="dialog_title">
+                <h1>Young-hee</h1>
+                <button class="dialog_button" onclick="closeDialog('squid_game')"><i class="fa-solid fa-x"></i></button>   
+            </div>
+            <p>
+                Have you heard of Squid Game?
+            </p>
+        </dialog>
     </section>
 </body>
 </html>

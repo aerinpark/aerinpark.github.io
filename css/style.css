@@ -248,6 +248,9 @@ section {
         flex-direction: column;
         border-style: none;
         background: none;
+    }
+
+    header.active {
         width: 100%;
         height: 100%;
     }
