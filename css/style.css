@@ -344,7 +344,25 @@ section {
 
     .project_dialog p {
         font-size: 1.1rem;
+        padding: 15px;
     }
+}
+
+@media screen and (max-width: 500px){
+    .project_dialog {
+        padding: 15px;
+    }
+
+    .project_dialog h1 {
+        font-size: 1.4rem;
+    }
+
+
+    .project_dialog p {
+        font-size:1rem;
+        padding: 5px;
+    }
+
 
 }
 
