@@ -233,6 +233,13 @@ section {
     margin-top: 20px;
 }
 
+.project_dialog iframe {
+    width: 80%;
+    height: 80%;
+    display: block;
+    margin: 20px auto;
+}
+
 @media screen and (max-width: 1200px) {
     section {
         height: 100%;
@@ -354,9 +361,8 @@ section {
     }
 
     .project_dialog h1 {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
     }
-
 
     .project_dialog p {
         font-size:1rem;
