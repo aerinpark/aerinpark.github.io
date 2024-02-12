@@ -120,9 +120,15 @@ section {
     display: grid;
     grid-template-columns: 1fr 0.3fr;
     margin: 40px 10px;
+    align-items: center;
 }
 
-.img_grad {
+.self_intro_left p {
+    display: block;
+    margin: 0 auto;
+}
+
+.self_intro_left .img_left {
     width: auto;
     height: 400px;
     margin: 0 10px;
@@ -132,10 +138,16 @@ section {
 .self_intro_right {
     display: grid;
     grid-template-columns: 0.3fr 1fr;
-    margin: 20px 0;
+    margin: 40px 10px;
+    align-items: center;
 }
 
-.img_lake {
+.self_intro_right p {
+    display: block;
+    margin: 0 auto;
+}
+
+.self_intro_right .img_right {
     width: 450px;
     height: auto;
     padding-right: 15px;
@@ -240,6 +252,7 @@ section {
     margin: 20px auto;
 }
 
+/* Different screen sizing */
 @media screen and (max-width: 1200px) {
     section {
         height: 100%;
@@ -327,8 +340,17 @@ section {
         flex-direction: column;
     }
 
-    .self_intro_left .img_grad {
+    .self_intro_left .img_left {
         margin-top: 20px;
+    }
+
+    .self_intro_right .img_right {
+        margin-top: 20px;
+        order: 2;
+    }
+
+    .self_intro_right p {
+        order: 1;
     }
 }
 
@@ -341,7 +363,7 @@ section {
         font-size: 1.9rem;
     }
 
-    .self_intro_left {
+    .self_intro_left .self_intro_right{
         margin: 30px 0;
     }
 
